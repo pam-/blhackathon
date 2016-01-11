@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  root to: 'ideas#new'
+  get '/this-is-not-a-drill', to: 'ideas#new'
   resources :ideas
 end
