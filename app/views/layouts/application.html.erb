@@ -11,10 +11,8 @@
     <%= content_tag :div, msg, class: name %>
   <% end %>
   <%= render 'layouts/nav' %>
-  <div class="l-container">
-    <%= render 'info/about' %>
-    <%= yield %>
-  </div>
+  <%= render 'info/about' %>
+  <%= yield %>
   <%= render 'layouts/footer' %>
 </body>
 </html>

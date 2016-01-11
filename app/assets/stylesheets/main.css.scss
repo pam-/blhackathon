@@ -1,39 +1,13 @@
 
-
-body,
-html {
-  width: 100%;
-  height: 100%;
-  background-color:#fff;
-}
-
-h1 {
-  font-family: 'Russo One', sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-body,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Titillium Web', sans-serif;
-  text-transform: lowercase;
-}
-
-ul {
-  margin: 0;
-  padding:0;
-  list-style-type: none;
-}
-
 .navbar-brand {
   font-family: 'Russo One', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   float: left;
+}
+
+.navbar-header {
+  width: 100%;
 }
 
 .topnav {
@@ -45,10 +19,14 @@ ul {
   font-weight: 400;
 }
 
+.row {
+  text-align: center;
+}
+
 .m-social {
   margin: 0;
   padding: 0;
-  float: left;
+  float: right;
   width: 200px;
   height: 50px;
   padding: 15px 15px;
@@ -56,49 +34,88 @@ ul {
 }
 
 .m-social__button {
-  float: left;
+  float: right;
   width: 20px;
   height: 20px;
   margin-left: 10px;
+  color: #777777;
+  &:hover {
+    color: darken(#777777, 15%);
+  }
 }
 
-.m-social__twitter, .m-social__facebook, .m-social__instagram {
-  background: no-repeat center center;
-  background-size: 15px;
-}
-
-.m-social__twitter {
-  background-image: url(twitter_logo.png);
-}
-
-.m-social__facebook {
-  background-image: url(fb_logo.png);
-}
-
-.m-social__instagram {
-  background-image: url(instagram_logo.png);
-}
-
-.m-section__idea_form {
+section {
+  position: relative;
   padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
   padding-bottom: 50px;
   text-align: center;
   color: #f8f8f8;
-  background: url(intro-bg.jpg) no-repeat center center;
-  background-size: cover;
+}
 
+.m-section__underlay {
+  background: rgba(#000, 0.5);
+  padding: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.m-section__about_part1 {
+  background: url(woc_tech.jpg) no-repeat center center;
+  background-size: cover;
+  .section-heading-spacer-alt {
+    width: 200px;
+    border-top: 3px solid #efefef;
+  }
+}
+
+.m-section__about_part2 {
+  background: #000;
+  background-size: cover;
 }
 
 .intro-message {
   position: relative;
-  padding-top: 28%;
-  padding-bottom: 25%;
+  padding: 10% 0;
+  text-align: center;
+  h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+  }
 }
 
-.intro-message > h1 {
-  margin: 0;
-  text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-  font-size: 4.5em;
+.m-section__small_more {
+  border: 8px solid #efefef;
+  background: #fff;
+  .section-heading-spacer-alt {
+    width: 200px;
+    border-top: 3px solid #777777;
+  }
+}
+
+.m-section__small_details {
+  background: url(intro-bg.jpg) no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  .section-heading-spacer-alt {
+    width: 200px;
+    border-top: 3px solid #777777;
+  }
+}
+
+.l-footer {
+  position: relative;
+  background: #000;
+  color: #fff;
+  .container {
+    padding: 50px 0;
+    text-align: center;
+    li {
+      font-size: 14px;
+    }
+  }
 }
 
 .intro-divider {
@@ -116,35 +133,35 @@ ul {
 .intro-form-box {
   background-color: rgba(0,0,0,0.5);
   padding:55px;
-
+  float: none;
+  margin: 0 auto;
 }
 
 @media(max-width:767px) {
   .intro-message {
-   padding-top: 18%;
- }
+     padding-top: 18%;
+   }
 
  .intro-message > h1 {
-  font-size: 2.75em;
-}
+    font-size: 2.75em;
+  }
 
-ul.intro-social-buttons > li {
-  display: inline-block;
-  margin-bottom: 20px;
-  padding: 0;
-}
+  ul.intro-social-buttons > li {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 0;
+  }
 
-.intro-divider {
-  width: 100%;
-}
+  .intro-divider {
+    width: 100%;
+  }
 
-.intro-form-box {
-  background-color: rgba(0,0,0,0.5);
-  padding:55px;
-  padding-top:35px;
-  padding-bottom:35px;
-
-}
+  .intro-form-box {
+    background-color: rgba(0,0,0,0.5);
+    padding:55px;
+    padding-top:35px;
+    padding-bottom:35px;
+  }
 }
 
 .network-name {
@@ -156,15 +173,12 @@ ul.intro-social-buttons > li {
 
 .content-section-a {
   padding: 50px 0;
-  background-color: #000;
   color:#eee;
 }
 
 .content-section-b {
-  background-color:#5cb85c;
+  // background-color:#5cb85c;
   padding: 50px 0;
-  border-bottom: 1px solid #126512;
-  border-top: 1px solid #126512;
 }
 
 .section-heading {
@@ -175,12 +189,6 @@ ul.intro-social-buttons > li {
   float: left;
   width: 200px;
   border-top: 3px solid #e7e7e7;
-}
-
-.section-heading-spacer-alt {
-  float: left;
-  width: 200px;
-  border-top: 3px solid #444444;
 }
 
 .banner {
@@ -253,8 +261,7 @@ p.copyright {
 .floating-label-form-group textarea {
   z-index: 1;
   position: relative;
-  padding-right: 0;
-  padding-left: 0;
+  padding: 30px 0;
   border: 0;
   border-radius: 0;
   font-size: 1.2em;
@@ -264,35 +271,9 @@ p.copyright {
   color:#fff;
 }
 
-.floating-label-form-group label {
-  display: block;
-  z-index: 0;
-  position: relative;
-  top: 2em;
-  margin: 0;
-  font-size: .85em;
-  line-height: 1.25em;
-  vertical-align: middle;
-  vertical-align: baseline;
-  opacity: 0;
-  -webkit-transition: top .3s ease,opacity .3s ease;
-  -moz-transition: top .3s ease,opacity .3s ease;
-  -ms-transition: top .3s ease,opacity .3s ease;
-  transition: top .3s ease,opacity .3s ease;
-}
-
 .floating-label-form-group::not:first-child {
   padding-left: 14px;
   border-left: 1px solid #eee;
-}
-
-.floating-label-form-group-with-value label {
-  top: 0;
-  opacity: 1;
-}
-
-.floating-label-form-group-with-focus label {
-  color: #18bc9c;
 }
 
 form .row:first-child .floating-label-form-group {
