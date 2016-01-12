@@ -1,0 +1,44 @@
+.navbar-brand {
+  font-family: 'Russo One', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  float: left;
+}
+
+.navbar-header {
+  width: 100%;
+}
+
+.topnav {
+  font-size: 14px;
+}
+
+@media(max-width:800px) {
+  .topnav {
+    font-size: 20px;
+  }
+  .container > .navbar-header {
+    margin: 0;
+  }
+  li {
+    margin-right: 30px;
+  }
+  .navbar {
+    padding: 15px 0;
+  }
+}
+
+@media(max-width:420px) {
+  .topnav {
+    font-size: 15px;
+  }
+  .container > .navbar-header {
+    margin: 0;
+  }
+  li {
+    margin-right: 0;
+  }
+  .navbar {
+    padding: 5px 0;
+  }
+}

@@ -1,0 +1,156 @@
+.flash-success, .flash-error {
+  position: absolute;
+  left: 0; right: 0;
+  top: 70px;
+  z-index: 3;
+  text-align: center;
+}
+
+.flash-success {
+  background: #26A65B;
+}
+
+.flash-error {
+  background: #D64541;
+}
+
+.l-footer {
+  position: relative;
+  background: #000;
+  color: #fff;
+  .container {
+    padding: 50px 0;
+    text-align: center;
+    li {
+      font-size: 14px;
+    }
+  }
+}
+
+.intro-divider {
+  width: 400px;
+  border-top: 1px solid #f8f8f8;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+
+.intro-message > h3 {
+  margin-top:-5px;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+
+.network-name {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.content-section-a {
+  padding: 50px 0;
+  color:#eee;
+}
+
+.content-section-b {
+  padding: 50px 0;
+}
+
+.section-heading {
+  margin-bottom: 30px;
+}
+
+.section-heading-spacer {
+  float: left;
+  width: 200px;
+  border-top: 3px solid #e7e7e7;
+}
+
+.banner {
+  padding: 100px 0;
+  color: #f8f8f8;
+  background-color: #000;
+  background-size: cover;
+}
+
+.banner h2 {
+  margin: 0;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+  font-size: 3em;
+}
+
+.banner ul {
+  margin-bottom: 0;
+}
+
+.banner-social-buttons {
+  float: right;
+  margin-top: 0;
+}
+
+@media(max-width:1199px) {
+  ul.banner-social-buttons {
+    float: left;
+    margin-top: 15px;
+  }
+}
+
+@media(max-width:767px) {
+  .banner h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 3em;
+  }
+
+  ul.banner-social-buttons > li {
+    display: block;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  ul.banner-social-buttons > li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+footer {
+  text-align:right;
+  padding: 0px 0px 15px 0px;
+  background-color: #000;
+}
+
+p.copyright {
+  margin: 15px 0 0;
+}
+
+/* form */
+
+.floating-label-form-group {
+  position: relative;
+  margin-bottom: 0;
+  padding-bottom: 0.0em;
+  border-bottom: 1px solid #eee;
+}
+
+.floating-label-form-group input,
+.floating-label-form-group textarea {
+  z-index: 1;
+  position: relative;
+  padding: 30px 0;
+  border: 0;
+  border-radius: 0;
+  font-size: 1.2em;
+  background: 0 0;
+  box-shadow: none!important;
+  resize: none;
+  color:#fff;
+}
+
+.floating-label-form-group::not:first-child {
+  padding-left: 14px;
+  border-left: 1px solid #eee;
+}
+
+form .row:first-child .floating-label-form-group {
+  border-top: 1px solid #eee;
+}

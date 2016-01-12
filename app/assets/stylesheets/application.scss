@@ -12,14 +12,15 @@
  *
  */
 
-@import "bootstrap.min";
+@import "bootstrap";
 @import "font-awesome";
 @import url("https://fonts.googleapis.com/css?family=Russo+One");
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web");
 
 @import "compass";
 @import "general";
-@import "layout/l-container";
 @import "main";
-@import "layout/l-nav";
+@import "layout/navbar";
 @import "modules/m-about";
+@import "modules/m-social";
+@import "modules/m-section";

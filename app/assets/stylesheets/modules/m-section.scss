@@ -1,0 +1,217 @@
+$m: ".m-section";
+
+
+section {
+  min-height: 100% !important;
+  height: 100%;
+}
+
+section {
+  position: relative;
+  padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+  padding-bottom: 50px;
+  text-align: center;
+  color: #f8f8f8;
+  margin: 0;
+}
+
+.row {
+  text-align: left;
+  p {
+    font-size: 24px;
+    line-height: 1.75;
+    font-weight: 400;
+  }
+}
+
+.intro-message {
+  position: relative;
+  padding: 5% 0;
+  text-align: center;
+  h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+  }
+}
+
+#{$m}__underlay {
+  background: rgba(#000, 0.7);
+  padding: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+#{$m}__about_part1 {
+  background: url(woc_tech.jpg) no-repeat center center;
+  background-size: cover;
+  .intro-message {
+    padding-top: 10%;
+  }
+  .section-heading-spacer-alt {
+    width: 200px;
+    border-top: 3px solid #efefef;
+  }
+}
+
+#{$m}__about_part2 {
+  background: #000;
+  background-size: cover;
+}
+
+#{$m}__small_more {
+  border: 8px solid #efefef;
+  background: #fff;
+  .section-heading-spacer-alt {
+    width: 200px;
+    border-top: 3px solid #777777;
+  }
+}
+
+#{$m}__small_details {
+  position: relative;
+  height: 100%;
+  background: url(intro-bg.jpg) no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  .section-heading-spacer-alt {
+    width: 200px;
+    border-top: 3px solid #777777;
+  }
+}
+
+#{$m}__idea_form__intro-form-box {
+  background-color: rgba(0,0,0,0.5);
+  padding:55px;
+  float: none;
+  margin: 0 auto;
+}
+
+#{$m}__idea_form {
+  padding: 0;
+  margin-bottom: 80px;
+}
+
+@media(max-width: 800px){
+  section {
+    min-height: 80% !important;
+    height: 80%;
+    .long_blurb {
+      display: none;
+    }
+    .short_blurb {
+      display: block;
+    }
+  }
+
+  #{$m}__about_part1 {
+    margin-top: 70px;
+    .intro-message {
+     padding-top: 10%;
+   }
+  }
+
+  #{$m}__underlay {
+    height: 100%;
+  }
+
+  .row {
+    margin: 0;
+    p {
+      font-size: 24px;
+      line-height: 1.75;
+      font-weight: 700;
+    }
+  }
+
+  .intro-message {
+     padding-top: 20px;
+   }
+
+ .intro-message > h1 {
+    font-size: 2.75em;
+  }
+
+  #{$m}__idea_form__intro-form-box {
+    background-color: rgba(0,0,0,0.5);
+    padding:55px;
+    padding-top:35px;
+    padding-bottom:35px;
+  }
+}
+
+@media(max-width: 420px){
+  section {
+    min-height: 80% !important;
+    height: 80%;
+  }
+
+  .content-section-a {
+    padding: 0;
+    color:#eee;
+  }
+
+  #{$m}__about_part1 {
+    margin-top: 60px;
+    .intro-message {
+      padding-top: 10%;
+    }
+    .content-section-a {
+      .container {
+        padding: 50px 20px;
+      }
+    }
+  }
+
+  #{$m}__underlay {
+    height: 100%;
+  }
+
+  .row {
+    margin: 0;
+    p {
+      font-size: 15px;
+    }
+  }
+
+  .intro-message {
+     padding-top: 20px;
+   }
+
+ .intro-message > h1 {
+    font-size: 2em;
+  }
+
+  #{$m}__idea_form__intro-form-box {
+    background-color: rgba(0,0,0,0.5);
+    padding:55px;
+    padding-top:35px;
+    padding-bottom:35px;
+  }
+}
+
+@media(max-width: 320px){
+  section {
+    min-height: 80% !important;
+    height: 80%;
+  }
+
+  .content-section-a {
+    padding: 0;
+    color:#eee;
+  }
+
+  #{$m}__about_part1 {
+    margin-top: 60px;
+    .intro-message {
+      padding-top: 10%;
+    }
+    .content-section-a {
+      .container {
+        padding: 0;
+      }
+    }
+  }
+}

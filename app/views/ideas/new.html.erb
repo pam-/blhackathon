@@ -1,14 +1,19 @@
-<div class="m-section__small_details">
+<section class="m-section__small_details">
+<section class="m-section__underlay"></section>
   <div class="content-section-b">
     <div class="container">
       <div class="row">
-        <h1>Blhackathon first edition: The Arts</h1>
-        <hr class="section-heading-spacer-alt">
+        <div class="intro-message">
+            <h1>Blhackathon first edition: The Arts</h1>
+            <hr class="section-heading-spacer-alt">
+        </div>
+        <a name="form"></a>
         <div class="col-lg-8 col-sm-push-2  col-sm-8">
           <div class="clearfix"></div>
-          <p class="lead">Tech and Art should come together more often.</p>
-          <p> There should be a place for us to feel free to nerd out, geek out, be wonderfully weird and excited about building stuff. A space free of judgment, and full of creativity, pedagogy, and collaboration. Egos should be left outside, and positivity should take over.Blhackathon wants to provide that environment.</p>
-          <p> It’ll be the chance to be ourselves, and get to know one another while collaborating on interesting projects. Let’s build a community.</p>
+          <p> The first blhackathon edition will be a hackathon aiming to support art in the black community.</p>
+          <p><i><b>Hackathon</b>: An event, typically lasting several days, in which a large number of people meet to engage in collaborative project building.</i>
+          </p>
+          <p>Submit an idea for a project you think could help the creative community, change the art game, or even save lives, by filling out the form below. <br> Be original! Only 3 ideas will get chosen. Read more about the event <a class="more">here</a> <br> Submission ends [insert date]</p>
         </div>
       </div>
     </div>
@@ -16,12 +21,11 @@
 
   <!-- Idea form -->
   <section class="m-section__idea_form">
-    <a name="form"></a>
-    <div class="intro-header">
+    <div class="m-section__idea_form__intro-header">
       <div class="container">
         <div class="row" style="padding-bottom:0;">
           <!-- FORM -->
-          <div class="col-md-8 col-lg-8 intro-form-box">
+          <div class="col-md-8 col-lg-8 m-section__idea_form__intro-form-box">
             <h1>Submit an Idea</h1>
             <%= form_for @idea do |f| %>
             <div class="row control-group">
@@ -51,7 +55,7 @@
             <br>
             <div class="row">
               <div class="form-group col-xs-12">
-                <button type="submit" class="btn btn-block btn-success btn-lg">Send</button>
+                <%= f.submit "Submit", class: "btn btn-block btn-success btn-lg" %>
               </div>
             </div>
             <% end %>
@@ -60,4 +64,3 @@
       </div>
     </div>
   </section>
-</div>

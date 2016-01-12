@@ -1,0 +1,26 @@
+$m: ".m-social";
+
+#{$m} {
+  margin: 0;
+  float: right;
+  height: 50px;
+  padding: 15px 15px;
+  line-height: 20px;
+}
+
+@media(max-width: 800px) {
+  #{$m} {
+    padding: 15px 0;
+  }
+}
+
+#{$m}__button {
+  float: right;
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  color: #777777;
+  &:hover {
+    color: darken(#777777, 15%);
+  }
+}

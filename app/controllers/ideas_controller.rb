@@ -8,12 +8,12 @@ class IdeasController < ApplicationController
     if @idea.save
       flash[:success] = "Got it!"
       respond_to do |format|
-        format.html { render 'new' }
+        format.html { redirect_to new_idea_path }
       end
     else
-      flash[:error] = "Got it! NOT!!"
+      flash[:error] = "Whoops! Something went wrong..."
       respond_to do |format|
-        format.html { render 'new' }
+        format.html { redirect_to new_idea_path }
       end
     end
   end

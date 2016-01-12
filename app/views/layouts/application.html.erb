@@ -2,13 +2,17 @@
 <html>
 <head>
   <title>THE BLHACKATHON</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width">
   <%= stylesheet_link_tag    'application', media: 'all'%>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
   <% flash.each do |name, msg| %>
-    <%= content_tag :div, msg, class: name %>
+    <%= content_tag :div, msg, class: "flash-#{name}" %>
   <% end %>
   <%= render 'layouts/nav' %>
   <%= render 'info/about' %>
