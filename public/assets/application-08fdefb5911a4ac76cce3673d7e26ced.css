@@ -17,8 +17,6 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-@import url("https://fonts.googleapis.com/css?family=Russo+One");
-@import url("https://fonts.googleapis.com/css?family=Titillium+Web");
 /* line 5, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/bootstrap.css */
 html {
   font-family: sans-serif;
@@ -12002,35 +12000,56 @@ a:hover {
 }
 
 /* line 1, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
+.flash-success, .flash-error {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 70px;
+  z-index: 3;
+  text-align: center;
+}
+
+/* line 9, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
+.flash-success {
+  background: #26A65B;
+}
+
+/* line 13, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
+.flash-error {
+  background: #D64541;
+}
+
+/* line 17, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
 .l-footer {
   position: relative;
   background: #000;
   color: #fff;
+  margin-top: 150px;
 }
-/* line 5, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
+/* line 22, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
 .l-footer .container {
   padding: 50px 0;
   text-align: center;
 }
-/* line 8, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
+/* line 25, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
 .l-footer .container li {
   font-size: 14px;
 }
 
-/* line 14, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
+/* line 31, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
 .intro-divider {
   width: 400px;
   border-top: 1px solid #f8f8f8;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-/* line 21, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
+/* line 38, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
 .intro-message > h3 {
   margin-top: -5px;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
-/* line 27, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
+/* line 44, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
 .network-name {
   text-transform: uppercase;
   font-size: 14px;
@@ -12038,30 +12057,30 @@ a:hover {
   letter-spacing: 2px;
 }
 
-/* line 34, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
+/* line 51, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
 .content-section-a {
   padding: 50px 0;
   color: #eee;
 }
 
-/* line 39, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
+/* line 56, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
 .content-section-b {
   padding: 50px 0;
 }
 
-/* line 43, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
+/* line 60, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
 .section-heading {
   margin-bottom: 30px;
 }
 
-/* line 47, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
+/* line 64, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
 .section-heading-spacer {
   float: left;
   width: 200px;
   border-top: 3px solid #e7e7e7;
 }
 
-/* line 53, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
+/* line 70, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
 .banner {
   padding: 100px 0;
   color: #f8f8f8;
@@ -12069,65 +12088,65 @@ a:hover {
   background-size: cover;
 }
 
-/* line 60, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
+/* line 77, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
 .banner h2 {
   margin: 0;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
   font-size: 3em;
 }
 
-/* line 66, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
+/* line 83, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
 .banner ul {
   margin-bottom: 0;
 }
 
-/* line 70, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
+/* line 87, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
 .banner-social-buttons {
   float: right;
   margin-top: 0;
 }
 
 @media (max-width: 1199px) {
-  /* line 76, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
+  /* line 93, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
   ul.banner-social-buttons {
     float: left;
     margin-top: 15px;
   }
 }
 @media (max-width: 767px) {
-  /* line 83, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
+  /* line 100, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
   .banner h2 {
     margin: 0;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
     font-size: 3em;
   }
 
-  /* line 89, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
+  /* line 106, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
   ul.banner-social-buttons > li {
     display: block;
     margin-bottom: 20px;
     padding: 0;
   }
 
-  /* line 95, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
+  /* line 112, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
   ul.banner-social-buttons > li:last-child {
     margin-bottom: 0;
   }
 }
-/* line 100, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
+/* line 117, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
 footer {
   text-align: right;
   padding: 0px 0px 15px 0px;
   background-color: #000;
 }
 
-/* line 106, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
+/* line 123, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
 p.copyright {
   margin: 15px 0 0;
 }
 
 /* form */
-/* line 112, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
+/* line 129, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
 .floating-label-form-group {
   position: relative;
   margin-bottom: 0;
@@ -12135,7 +12154,7 @@ p.copyright {
   border-bottom: 1px solid #eee;
 }
 
-/* line 119, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
+/* line 136, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
 .floating-label-form-group input,
 .floating-label-form-group textarea {
   z-index: 1;
@@ -12150,13 +12169,13 @@ p.copyright {
   color: #fff;
 }
 
-/* line 133, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
+/* line 150, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
 .floating-label-form-group::not:first-child {
   padding-left: 14px;
   border-left: 1px solid #eee;
 }
 
-/* line 138, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
+/* line 155, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/main.scss */
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eee;
 }
@@ -12291,40 +12310,38 @@ section {
   color: #f8f8f8;
   margin: 0;
 }
-/* line 16, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
-section .short_blurb {
-  display: none;
-}
-/* line 19, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
-section .long_blurb {
-  display: block;
-}
 
-/* line 24, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+/* line 18, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
 .row {
   text-align: left;
 }
-/* line 26, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+/* line 20, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
 .row p {
   font-size: 24px;
   line-height: 1.75;
   font-weight: 400;
 }
 
-/* line 33, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+/* line 27, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
 .intro-message {
   position: relative;
   padding: 5% 0;
   text-align: center;
 }
-/* line 37, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+/* line 31, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
 .intro-message h1 {
   margin: 0;
   font-size: 2.5em;
   letter-spacing: 1px;
 }
 
-/* line 44, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+/* line 38, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+.underlined {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* line 43, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
 .m-section__underlay {
   background: rgba(0, 0, 0, 0.7);
   padding: 0;
@@ -12334,51 +12351,53 @@ section .long_blurb {
   top: 0;
 }
 
-/* line 53, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+/* line 52, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
 .m-section__about_part1 {
   background: url(woc_tech.jpg) no-repeat center center;
   background-size: cover;
 }
-/* line 56, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+/* line 55, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
 .m-section__about_part1 .intro-message {
   padding-top: 10%;
 }
-/* line 59, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+/* line 58, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
 .m-section__about_part1 .section-heading-spacer-alt {
   width: 200px;
   border-top: 3px solid #efefef;
 }
 
-/* line 65, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+/* line 64, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
 .m-section__about_part2 {
   background: #000;
   background-size: cover;
 }
 
-/* line 70, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+/* line 69, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
 .m-section__small_more {
   border: 8px solid #efefef;
   background: #fff;
 }
-/* line 73, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+/* line 72, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
 .m-section__small_more .section-heading-spacer-alt {
   width: 200px;
   border-top: 3px solid #777777;
 }
 
-/* line 79, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+/* line 78, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
 .m-section__small_details {
+  position: relative;
+  height: 100%;
   background: url(intro-bg.jpg) no-repeat center center;
   background-size: cover;
   color: #fff;
 }
-/* line 83, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+/* line 84, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
 .m-section__small_details .section-heading-spacer-alt {
   width: 200px;
   border-top: 3px solid #777777;
 }
 
-/* line 89, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+/* line 90, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
 .m-section__idea_form__intro-form-box {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 55px;
@@ -12386,53 +12405,63 @@ section .long_blurb {
   margin: 0 auto;
 }
 
+/* line 97, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+.m-section__idea_form {
+  padding: 0;
+  margin-bottom: 80px;
+}
+
 @media (max-width: 800px) {
-  /* line 97, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+  /* line 103, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
   section {
     min-height: 80% !important;
     height: 80%;
   }
-  /* line 100, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+  /* line 106, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
   section .long_blurb {
     display: none;
   }
-  /* line 103, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+  /* line 109, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
   section .short_blurb {
     display: block;
   }
 
-  /* line 108, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+  /* line 114, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
   .m-section__about_part1 {
-    margin-top: 30px;
+    margin-top: 70px;
+  }
+  /* line 116, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+  .m-section__about_part1 .intro-message {
+    padding-top: 10%;
   }
 
-  /* line 112, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+  /* line 121, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
   .m-section__underlay {
     height: 100%;
   }
 
-  /* line 116, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+  /* line 125, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
   .row {
     margin: 0;
   }
-  /* line 118, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+  /* line 127, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
   .row p {
     font-size: 24px;
     line-height: 1.75;
     font-weight: 700;
   }
 
-  /* line 125, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+  /* line 134, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
   .intro-message {
     padding-top: 20px;
   }
 
-  /* line 129, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+  /* line 138, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
   .intro-message > h1 {
     font-size: 2.75em;
   }
 
-  /* line 133, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+  /* line 142, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
   .m-section__idea_form__intro-form-box {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 55px;
@@ -12441,60 +12470,86 @@ section .long_blurb {
   }
 }
 @media (max-width: 420px) {
-  /* line 142, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+  /* line 151, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
   section {
     min-height: 80% !important;
     height: 80%;
   }
 
-  /* line 147, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+  /* line 156, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
   .content-section-a {
     padding: 0;
     color: #eee;
   }
 
-  /* line 152, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+  /* line 161, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
   .m-section__about_part1 {
-    margin-top: 30px;
+    margin-top: 60px;
   }
-  /* line 154, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+  /* line 163, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
   .m-section__about_part1 .intro-message {
-    padding-top: 18%;
+    padding-top: 10%;
   }
-  /* line 157, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
-  .m-section__about_part1 .container {
+  /* line 167, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+  .m-section__about_part1 .content-section-a .container {
     padding: 50px 20px;
   }
 
-  /* line 162, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+  /* line 173, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
   .m-section__underlay {
     height: 100%;
   }
 
-  /* line 166, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+  /* line 177, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
   .row {
     margin: 0;
   }
-  /* line 168, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+  /* line 179, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
   .row p {
     font-size: 15px;
   }
 
-  /* line 173, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+  /* line 184, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
   .intro-message {
     padding-top: 20px;
   }
 
-  /* line 177, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+  /* line 188, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
   .intro-message > h1 {
     font-size: 2em;
   }
 
-  /* line 181, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+  /* line 192, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
   .m-section__idea_form__intro-form-box {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 55px;
     padding-top: 35px;
     padding-bottom: 35px;
+  }
+}
+@media (max-width: 375px) {
+  /* line 201, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+  section {
+    min-height: 80% !important;
+    height: 80%;
+  }
+
+  /* line 206, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+  .content-section-a {
+    padding: 0;
+    color: #eee;
+  }
+
+  /* line 211, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+  .m-section__about_part1 {
+    margin-top: 60px;
+  }
+  /* line 213, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+  .m-section__about_part1 .intro-message {
+    padding-top: 0;
+  }
+  /* line 217, /Users/pam/Projects/blhackathon_main/blhackathon/app/assets/stylesheets/modules/m-section.scss */
+  .m-section__about_part1 .content-section-a .container {
+    padding: 0;
   }
 }

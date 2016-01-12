@@ -35,6 +35,11 @@ section {
   }
 }
 
+.underlined {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
 #{$m}__underlay {
   background: rgba(#000, 0.7);
   padding: 0;
@@ -192,7 +197,7 @@ section {
   }
 }
 
-@media(max-width: 320px){
+@media(max-width: 375px){
   section {
     min-height: 80% !important;
     height: 80%;
@@ -206,7 +211,7 @@ section {
   #{$m}__about_part1 {
     margin-top: 60px;
     .intro-message {
-      padding-top: 10%;
+      padding-top: 0;
     }
     .content-section-a {
       .container {
