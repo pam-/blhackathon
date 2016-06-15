@@ -1,8 +1,13 @@
-.navbar-brand {
+.navbar-brand.topnav,
+.navbar-default {
   font-family: 'Russo One', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  float: left;
+  color: #000;
+  letter-spacing: 1px;
+  span {
+    color: #777;
+  }
 }
 
 .navbar-header {

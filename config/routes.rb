@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  get '/this-is-not-a-drill', to: 'ideas#new'
-  resources :ideas
+  root 'home#home'
+  resources :members
 end

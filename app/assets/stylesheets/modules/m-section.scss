@@ -1,15 +1,8 @@
 $m: ".m-section";
 
-
-section {
-  min-height: 100% !important;
-  height: 100%;
-}
-
 section {
   position: relative;
-  padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-  padding-bottom: 50px;
+  padding-top: 200px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
   text-align: center;
   color: #f8f8f8;
   margin: 0;
@@ -87,22 +80,32 @@ section {
   }
 }
 
+#{$m}__landing_page {
+  margin-bottom: 258px;
+  .btn {
+    display: block;
+    margin: 20px auto;
+  }
+}
+
 #{$m}__idea_form__intro-form-box {
   background-color: rgba(0,0,0,0.5);
   padding:55px;
-  float: none;
   margin: 0 auto;
+  text-align: center;
+  h1 {
+    color: #fff;
+  }
 }
 
 #{$m}__idea_form {
   padding: 0;
-  margin-bottom: 80px;
 }
 
 @media(max-width: 800px){
   section {
-    min-height: 80% !important;
-    height: 80%;
+    // min-height: 80% !important;
+    // height: 80%;
     .long_blurb {
       display: none;
     }
@@ -141,18 +144,10 @@ section {
 
   #{$m}__idea_form__intro-form-box {
     background-color: rgba(0,0,0,0.5);
-    padding:55px;
-    padding-top:35px;
-    padding-bottom:35px;
   }
 }
 
 @media(max-width: 420px){
-  section {
-    min-height: 80% !important;
-    height: 80%;
-  }
-
   .content-section-a {
     padding: 0;
     color:#eee;
@@ -191,18 +186,11 @@ section {
 
   #{$m}__idea_form__intro-form-box {
     background-color: rgba(0,0,0,0.5);
-    padding:55px;
-    padding-top:35px;
-    padding-bottom:35px;
+    padding: 0;
   }
 }
 
 @media(max-width: 375px){
-  section {
-    min-height: 80% !important;
-    height: 80%;
-  }
-
   .content-section-a {
     padding: 0;
     color:#eee;

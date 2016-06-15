@@ -1,0 +1,43 @@
+<!-- Member form -->
+<div class="m-section__idea_form">
+  <div class="container">
+    <div class="row">
+      <!-- FORM -->
+      <div class="col-md-8 col-lg-8 m-section__idea_form__intro-form-box">
+        <h1>Join</h1>
+        <%= form_for @member do |f| %>
+        <div class="row control-group">
+          <div class="form-group col-xs-12 floating-label-form-group controls">
+            <%= f.text_field :name, placeholder: "Name", class: "form-control" %>
+          </div>
+        </div>
+
+        <div class="row control-group">
+          <div class="form-group col-xs-12 floating-label-form-group controls">
+            <%= f.text_field :email, placeholder: "Email Address", class: "form-control" %>
+          </div>
+        </div>
+
+        <div class="row control-group">
+          <div class="form-group col-xs-12 floating-label-form-group controls">
+            <%= f.text_field :twitter, placeholder: "Twitter or Instagram", class: "form-control" %>
+          </div>
+        </div>
+
+        <div class="row control-group">
+          <div class="form-group col-xs-12 floating-label-form-group controls">
+            <%= f.text_area :bio, placeholder: "What's your idea", class: "form-control" %>
+          </div>
+        </div>
+
+        <br>
+        <div class="row">
+          <div class="form-group col-xs-12">
+            <%= f.submit "Submit", class: "btn btn-block btn-md btn-lg" %>
+          </div>
+        </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
