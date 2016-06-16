@@ -2,7 +2,6 @@ $m: ".m-section";
 
 section {
   position: relative;
-  padding-top: 200px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
   text-align: center;
   color: #f8f8f8;
   margin: 0;
@@ -81,10 +80,13 @@ section {
 }
 
 #{$m}__landing_page {
+  padding-top: 100px;
   margin-bottom: 258px;
   .btn {
     display: block;
-    margin: 20px auto;
+    margin: 50px auto;
+    padding: 20px;
+    width: 160px;
   }
 }
 
@@ -92,6 +94,7 @@ section {
   background-color: rgba(0,0,0,0.5);
   padding:55px;
   margin: 0 auto;
+  float: none;
   text-align: center;
   h1 {
     color: #fff;
@@ -99,13 +102,11 @@ section {
 }
 
 #{$m}__idea_form {
-  padding: 0;
+  padding: 0px 40px;
 }
 
 @media(max-width: 800px){
   section {
-    // min-height: 80% !important;
-    // height: 80%;
     .long_blurb {
       display: none;
     }
@@ -148,6 +149,11 @@ section {
 }
 
 @media(max-width: 420px){
+  #{$m}__landing_page {
+    padding-top: 130px;
+    margin-bottom: 0;
+  }
+
   .content-section-a {
     padding: 0;
     color:#eee;
@@ -191,6 +197,11 @@ section {
 }
 
 @media(max-width: 375px){
+  #{$m}__landing_page {
+    padding-top: 60px;
+    margin-bottom: 0;
+  }
+
   .content-section-a {
     padding: 0;
     color:#eee;

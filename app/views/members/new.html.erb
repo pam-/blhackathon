@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row">
       <!-- FORM -->
-      <div class="col-md-8 col-lg-8 m-section__idea_form__intro-form-box">
+      <div class="col-md-8 col-lg-8 m-section__idea_form__intro-form-box col-lg-offset-6">
         <h1>Join</h1>
         <%= form_for @member do |f| %>
         <div class="row control-group">
@@ -20,13 +20,13 @@
 
         <div class="row control-group">
           <div class="form-group col-xs-12 floating-label-form-group controls">
-            <%= f.text_field :twitter, placeholder: "Twitter or Instagram", class: "form-control" %>
+            <%= f.text_field :twitter, placeholder: "Twitter", class: "form-control" %>
           </div>
         </div>
 
         <div class="row control-group">
           <div class="form-group col-xs-12 floating-label-form-group controls">
-            <%= f.text_area :bio, placeholder: "What's your idea", class: "form-control" %>
+            <%= f.text_area :bio, placeholder: "A little about you", class: "form-control" %>
           </div>
         </div>
 
